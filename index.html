@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+
+    <!-- Bootstraps Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="dist/css/lightbox.min.css" />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- icon -->
+    <link rel="icon" href="image/logo/download (2).png">
+    <title>Kedai Mamake</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-purple ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mamake</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="promo.html">Promo</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="bi bi-cart"></i>
+                Keranjang
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- hero image -->
+    <section id="banner">
+      <div class="container-fluid banner d-flex align-items-center">
+        <div class="container">
+          <h1 class="text-light display-6 mb-4 text-center">Selamat datang Di Kedai Mamake</h1>
+          <h2 class="text-light mb-3 text-center">Lagi mau makan apa ?</h2>
+          <div class="col-md-8 offset-md-2">
+            <div class="input-group input-group-md">
+              <select class="form-control" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Pilih Kategori Makanan ...</option>
+                <option value="1">Sarapan pagi</option>
+                <option value="2">Makan Siang</option>
+                <option value="3">Makan Malam</option>
+              </select>
+              <button class="ms-1 btn btn-warning text-light" type="button">Telusuri</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir hero image -->
+
+    <!-- promo -->
+    <section id="promo">
+      <div class="container-fluid py-4">
+        <div class="container">
+          <h2 class="text-center">Promo Minggu Ini</h2>
+
+          <div class="row mt-4 justify-content-evenly">
+            <div class="col-md-3 hovered-card col-sm-6 my-2">
+              <div class="card">
+                <img src="image/product/thumb/chocolate-mousse.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Beli 1 Gratis 1</h5>
+                  <p class="card-text">Belum dimasukan inputan oi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 hovered-card col-sm-6 my-2">
+              <div class="card">
+                <img src="image/product/thumb/coffee.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Gratis Topping</h5>
+                  <p class="card-text">Belum dimasukan inputan oi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 hovered-card col-sm-6 my-2">
+              <div class="card">
+                <img src="image/product/thumb/brownies.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Gratis Kue</h5>
+                  <p class="card-text">Belum dimasukan inputan oi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a class="btn btn-warning btn-md" href="promo.html">Lihat Semua Promo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir promo -->
+
+    <!-- service -->
+    <section id="service">
+      <div class="container-fluid bg-purple">
+        <div class="container py-3">
+          <h2 class="text-center my-3 text-light">Kami Melayani</h2>
+
+          <div class="row my-5 justify-content-center">
+            <div class="col-md-3 text-center hovered-card">
+              <div class="icon-service m-auto">
+                <i class="bi bi-airplane pesawat"></i>
+              </div>
+              <div class="text-white my-3">
+                <h4>Delivery</h4>
+                <figcaption class="figure-caption">
+                  <i>
+                    <p>Pengantaran Cepat dan aman kami jamin akan sampai depan gerbang rumah klean semua</p>
+                  </i>
+                </figcaption>
+              </div>
+            </div>
+            <div class="col-md-3 hovered-card text-center">
+              <div class="icon-service m-auto">
+                <i class="bi bi-basket pesawat"></i>
+              </div>
+              <div class="text-white my-3">
+                <h4>Take Away</h4>
+                <figcaption class="figure-caption">
+                  <i>
+                    <p>Pesan jam 12 siang dan diambil nanti malam ? tentu bisa,bisa request tergantung keinginan anda semua</p>
+                  </i>
+                </figcaption>
+              </div>
+            </div>
+            <div class="col-md-3 text-center hovered-card">
+              <div class="icon-service m-auto">
+                <i class="bi bi-cup-straw pesawat"></i>
+              </div>
+              <div class="text-white my-3">
+                <h4>Dine In</h4>
+                <figcaption class="figure-caption">
+                  <i>
+                    <p>Bawa pasangan dan bingung mau nongkrong dimana ? Disini tentu bisa sayang,dengan diiringi musik dari jangs malam anda akan terasa begitu indah</p>
+                  </i>
+                </figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir service -->
+
+    <!-- produk -->
+    <section id="produk">
+      <div class="container-fluid py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Paling banyak dibeli</h2>
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6 hovered-card">
+              <div class="card">
+                <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                  <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                  <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                  <h4 class="card-text text-warning">Rp 12.OOO</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hovered-card">
+              <div class="card">
+                <a href="image/sakura.webp" data-lightbox="mie-sakura" data-title="BEBAN NYA NARUTO SAMA SASUKE NIH">
+                  <img src="image/sakura.webp" class="card-img-top" alt="..." height="200" />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="fw-bold fst-italic card-title text-warning">Mie Sakur</h5>
+                  <p class="card-text">Direbus Dengan kesabaran yang pasti oleh mamake</p>
+                  <h4 class="card-text text-warning">Rp 3.OOO</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hovered-card">
+              <div class="card">
+                <a href="image/kopihitam.jpg" data-lightbox="kopihitam" data-title="INI DEMENAN NYA BABA ZIDAN BANGET SICH">
+                  <img src="image/kopihitam.jpg" class="card-img-top" alt="..." height="175" />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="fw-bold fst-italic card-title text-warning">Kopi Hitam</h5>
+                  <p class="card-text">Kopi kapal api membuat kaum milenial melupakan sejenak tentang hal cinta</p>
+                  <h4 class="card-text text-warning">Rp 3.OOO</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 hovered-card">
+              <div class="card">
+                <a href="image/sateusus.jpg" data-lightbox="sateusus" data-title="Paling pas buat pacaran">
+                  <img src="image/sateusus.jpg" class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body text-center">
+                  <h5 class="fw-bold fst-italic card-title text-warning">Sate Usus</h5>
+                  <p class="card-text">Dengan membayar 2OOO/pertusuk...Cintai Usus mu makan usus tiap hari</p>
+                  <h4 class="card-text text-warning">Rp 2.OOO</h4>
+                </div>
+              </div>
+            </div>
+          </div>        
+        <div class="mt-5 d-flex justify-content-center">
+          <a href="product.html" class="btn btn-warning btn-md text-light">Lihat Lainnya</a>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section id="review">
+      <div class="container-fluid py-5 bg-purple">
+        <div class="container">
+          <h2 class="text-center mb-5 text-light">Apa Kata Customer</h2>
+          <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Ngopi bradsss</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Muammar Rizal
+                  </figcaption>
+                  <p>Saya orang pribumi sini,anda jangan macam" semuahhhhhh!...saya siap beradu argument dengan anda yang pintar ngomong namun miskin aksi</p>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Tempat nya seru,jange suara nya bagus banget</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Anya Geraldine
+                  </figcaption>
+                  <p>Salah satu yang membuat saya nyaman nongkrong disini adalah karna jange,ketika dia sedang bernyanyi saya engga meninggalkan tempat duduk walaupun sedang kebelet pipis dan nahan berak...suara nya yang merdu membuat saya hilang akan segala masalah yang sedang menerpa</p>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Jange Ganteng Banget</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Pengagum Rahasia
+                  </figcaption>
+                  <p>Saat ini, hampir setiap orang memiliki media sosial, mulai dari yang usianya muda hingga tua. Dengan menggunakan medsos, seseorang bisa membagikan tentang keseharian maupun pencapaian yang telah dilakukannya.
+                    Orang-orang bisa membagikan tentang kehidupannya di medsos melalui foto, video, hingga tulisan berupa caption. Caption merupakan salah satu cara mengungkapkan ekspresi atau memperjelas maksud dari unggahan...goblok ganyambung</p>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card2">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Jange Jago banget main gitarnya + Suara nya bagus banget</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Ariel Tatum
+                  </figcaption>
+                  <p>Suara jange mirip banget ari lasso...entah dimana *bakso kntwadwadwja bakso djadbwkajbdaw*</p>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card2">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Nama instagram yang rambut nya gondrong itu apa kak ? hehe</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Hamba Allah
+                  </figcaption>
+                  <p>Tolong titipin salam kak ke dia kalo dia main kesana lagi.suruh follow ig aku,nih ig aku klik aja <a href="https://www.instagram.com/miakhalifa/">disini</a></p>
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card p-3 hovered-card2">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Kak gua lebih ganteng dari jange kan ? </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Muharam vickri al jimmy
+                  </figcaption>
+                  <p>Gasudi gua setiap nongkrong jange mulu yang ditanyain para wanita</p>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir review -->
+
+    <!-- reservasi -->
+    <section id="reservasi">
+      <div class="container-fluid py-5">
+        <div class="container">
+          <h2 class="text-center">RESERVASI</h2>
+          <p class="text-center">Pesan Sekarang,Jangan Sampai Kehabisan Makanan!</p>
+          <form action="" class="col-md-6 offset-md-3 mt-5">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama">
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Contact</label>
+              <input type="text" class="form-control" id="contact">
+            </div>
+            <div class="mb-3">
+              <label for="jumlahMakanan" class="form-label">Jumlah Makanan</label>
+              <input type="number" class="form-control" id="jumlahMakanan">
+            </div>
+            <div>
+              <button class="btn btn-warning col-12 text-light">
+                Pesan
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- reservasi -->
+
+    <!-- subscribe -->
+    <section id="subscribe">
+      <div class="container-fluid py-5 bg-grey text-light">
+        <div class="container">
+          <h5 class="text-center mb-4 fw-bold fst-italic">
+            Social Media
+          </h5>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-2 col-2">
+              <a href="https://wa.me/089639586047">
+                <i class="bi bi-whatsapp fs-1"></i>
+              </a>
+            </div>
+            <div class="col-md-2 col-2">
+              <a href="https://www.instagram.com/syifaanuu/">
+                <i class="bi bi-instagram fs-1"></i>
+              </a>
+            </div>
+            <div class="col-md-2 col-2">
+              <i class="bi bi-facebook fs-1" onclick="alert('Sedang diproses brow');"></i>
+            </div>
+            <div class="col-md-2 col-2">
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2Fchannel%2FUCTa05_M5B8CE8wisgm6Kt-w&e=ATM7I2raLCmQyIcRm1CdPClkcCe-ubSMMDf3f_lXWP6ypB3qCECxaBsjnDJLQzQWVN3pn3Nl6aJYWWGA0uSQYA">
+                <i class="bi bi-youtube fs-1"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text text-center mt-2">
+            <h4 class="mb-0">Subscribe</h4>
+            <p class="font-monospace">Untuk informasi promo</p>
+            <div class="col-md-8 offset-md-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Masukan Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir subscribe -->
+
+    <!-- footer -->
+    <div class="container-fluid py-3 bg-dark text-light">
+      <div class="container d-flex justify-content-between">
+        <label>&copy;2022 Kedai Mamake</label>
+        <label>Created By MuammarRizal</label>
+      </div>
+
+    </div>
+    <!-- akhir footer -->
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  </body>
+</html>

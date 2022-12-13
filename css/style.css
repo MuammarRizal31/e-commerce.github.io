@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  z-index: 111;
+}
+
+.maju {
+  margin-top: 50px;
+}
+
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  overflow-x: hidden;
+}
+.bg-purple {
+  background-color: rgb(114, 2, 114) !important; /* important ini penting jadi harus didahulukan*/
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.hovered-card,
+.hovered-card2 {
+  transition: 0.5s;
+}
+.hovered-card:hover {
+  transform: translateY(-25px);
+}
+
+.hovered-card2:hover {
+  transform: translateY(25px);
+}
+
+.hovered-btn {
+  transition: 0.5s;
+}
+.hovered-btn:hover {
+  transform: translate(10px, -25px);
+}
+
+.icon-service {
+  width: 90px;
+  border: 3px solid white;
+  height: 90px;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pesawat {
+  scale: 3;
+}
+
+.tahan {
+  top: 60px;
+}
+
+.bg-grey {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-product {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../image/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.banner-promo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+/* breakpoints */
+@media screen and (width < 576px) {
+  .margin {
+    margin-top: 25px;
+  }
+}

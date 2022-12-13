@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="dist/css/lightbox.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navigasi -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-purple">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jannah</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-5">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link active" href="#">Promo</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="bi bi-cart"></i>
+                Keranjang
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navigasi -->
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="container-fluid banner-promo d-flex align-items-center">
+        <div class="container">
+          <h1 class="text-light mb-4 text-center"><i>Sedang Promo</i></h1>
+          <div class="col-md-8 offset-md-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir banner -->
+
+    <!-- semua promo -->
+    <div class="container-fluid pt-4">
+      <div class="container">
+        <div class="row justify-content-center row-cols-sm-3">
+          <div class="col-md-3 justify-content-center d-flex mb-3">
+            <button class="btn btn-outline-warning active" onclick="showAll();" id="btnSemua">Semua Promo</button>
+          </div>
+          <div class="col-md-3 justify-content-center d-flex mb-3">
+            <button class="btn btn-outline-warning" onclick="showDiskon()" id="btn-promo-diskon">Promo Diskon</button>
+          </div>
+          <div class="col-md-3 justify-content-center d-flex mb-3">
+            <button class="btn btn-outline-warning" onclick="showBonus();" id="btn-promo-bonus">Promo Bonus</button>
+          </div>
+        </div>
+        <!-- semua promo -->
+        <div class="row g-4 mt-1 justify-content-center" id="coba">
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/sakura.webp" data-lightbox="mie-sakura" data-title="BEBAN NYA NARUTO SAMA SASUKE NIH">
+                <img src="image/sakura.webp" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Mie Sakur</h5>
+                <p class="card-text">Direbus Dengan kesabaran yang pasti oleh mamake</p>
+                <h4 class="card-text text-warning">Rp 3.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/kopihitam.jpg" data-lightbox="kopihitam" data-title="INI DEMENAN NYA BABA ZIDAN BANGET SICH">
+                <img src="image/kopihitam.jpg" class="card-img-top" alt="..." height="175" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Kopi Hitam</h5>
+                <p class="card-text">Kopi kapal api membuat kaum milenial melupakan sejenak tentang hal cinta</p>
+                <h4 class="card-text text-warning">Rp 3.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/sateusus.jpg" data-lightbox="sateusus" data-title="Paling pas buat pacaran">
+                <img src="image/sateusus.jpg" class="card-img-top" alt="..." />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Sate Usus</h5>
+                <p class="card-text">Dengan membayar 2OOO/pertusuk...Cintai Usus mu makan usus tiap hari</p>
+                <h4 class="card-text text-warning">Rp 2.OOO</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- akhir semua promo -->
+      </div>
+    </div>
+
+    <!-- promo diskon-->
+    <section id="promo-diskon">
+      <div class="container">
+        <div class="row g-4 mt-1 justify-content-center">
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir promo diskon -->
+
+    <!-- promo bonus -->
+    <section id="promo-bonus">
+      <div class="container">
+        <div class="row g-4 mt-1 justify-content-center">
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 hovered-btn col-lg-3">
+            <div class="card">
+              <a href="image/tako.jpg" data-lightbox="takoyaki" data-title="BELI JANGAN DILIAT DOANG">
+                <img src="image/tako.jpg" class="card-img-top" alt="..." height="200" />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="fw-bold fst-italic card-title text-warning">Takoyaki</h5>
+                <p class="card-text">Dibuat dengan penuh cinta sama mamake</p>
+                <h4 class="card-text text-warning">Rp 12.OOO</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir promo bonus -->
+
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
